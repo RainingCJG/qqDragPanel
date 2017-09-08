@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>qq登录面板拖拽</title>
+		<link rel="stylesheet" href="css/new_file.css" />
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js" ></script>
+		<script type="text/javascript" src="js/new_file.js" ></script>
+		<script type="text/javascript" src="js/getEven.js" ></script>
+	</head>
+	<body>
+		<!--qq登录界面-->
+		<div class="loginplane">
+			<form id="login" for="post">
+				<h4 id="drag"></h4>
+				<span class="close"></span>
+				<label>账 号：<input type="text" id="id" tabindex="-1" value="QQ号码或Email账号" /></label><br />
+				<label>密 码：<input type="password" id="pw" tabindex="-1" value="6位数字或字母" /></label><br />
+				<label for="btn" class="btn" role="button">
+					登 录<button id="btn" name="btn" type="submit"></button>
+				</label>
+				<div class="select" data-id="select-list" title="选择在线状态">
+					<b class="state online"></b>
+					<i></i>
+					<span>在线</span>
+				</div>
+			</form>
+			<!--在线状态菜单列表-->
+			<ul class="none" id="select-list">
+				<li id="online">
+					<b class="state online"></b>
+					<span>我在线上</span>
+				</li>
+				<li id="callme">
+					<b class="state callme"></b>
+					<span>Q我吧</span>
+				</li>
+				<li id="away">
+					<b class="state away"></b>
+					<span>离开</span>
+				</li>
+				<li id="busy">
+					<b class="state busy"></b>
+					<span>忙碌</span>
+				</li>
+				<li id="silent">
+					<b class="state silent"></b>
+					<span>请勿打扰</span>
+				</li>
+				<li id="hidden">
+					<b class="state hidden"></b>
+					<span>隐身</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
